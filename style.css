@@ -1,0 +1,30 @@
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+  border: 50px solid rgb(197, 58, 58);
+  margin: 25px;
+  border-radius: 25px;
+}
+.divs {
+  flex-grow: 1;
+  float: left;
+}
+
+.options {
+  margin: 5px;
+  color: white;
+  background-color: rgb(197, 58, 58);
+  border-radius: 25px;
+}
