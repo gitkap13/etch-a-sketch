@@ -24,11 +24,12 @@ function wipeBoard() {
 }
 
 gridButton.addEventListener("click", function (e) {
-  const gridSize = Number(window.prompt("Enter grid size"));
+  const gridSize = Number(window.prompt("Enter grid size\n(Value must be between 1 - 100) "));
+  if (gridSize <= 100 && gridSize > 0) { 
   dimensions = gridSize;
   wipeBoard();
   setGrid(dimensions);
-});
+}});
 
 resetButton.addEventListener("click", function (e) {
   wipeBoard();
